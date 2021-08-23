@@ -15,3 +15,8 @@ const data = Object.freeze([1, 2, 3, 4, 5, 6]);
 const addEmoji = (val: any) => toString(val) + "!";
 
 const emojiData = data.map(addEmoji);
+
+//Functions as return value
+
+const appendExclamation = (fixed) => (dynamic) => fixed + dynamic;
+
